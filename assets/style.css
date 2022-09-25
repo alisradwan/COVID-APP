@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#firstimg {
+  height: 40vh;
+  width: 100vw;
+}
+
+h1 {
+  margin: 10px;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: black; */
+  margin: 20px;
+  position: absolute;
+  top: 270px;
+  color: rgb(181, 181, 181);
+  border-radius: 5px;
+  background-color: rgb(88, 0, 0);
+  width: 96vw;
+  text-align: center;
+  font-weight: 500;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgb(57, 57, 74);
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 80px;
+}
+.Infopanel {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 57, 74);
+  margin: 20px;
+  border-radius: 10px;
+  height: 20vh;
+  margin-top: 200px;
+}
+#placeholder {
+  margin: 10px;
+  width: 20vw;
+  height: 5vh;
+  border: solid 2px black;
+}
+
+#Search {
+  margin: 4px;
+  width: 21vw;
+  margin: 20px;
+}
+
+#stats {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(181, 181, 181);
+  border-radius: 5px;
+
+  background-color: rgb(88, 0, 0);
+}
+.card {
+  color: white;
+  background-color: rgb(57, 57, 74);
+  border-radius: 10px;
+}
+
+.card-title {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+body {
+  background-color: rgb(0, 31, 78);
+}
+.CovidStats {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
