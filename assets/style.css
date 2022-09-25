@@ -1,3 +1,8 @@
+:root {
+  --border: rgb(255, 255, 255);
+  --background: rgb(75, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,16 +22,16 @@ h1 {
 
 h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* background-color: black; */
-  margin: 20px;
-  position: absolute;
-  top: 270px;
+  margin-top: 20px;
   color: rgb(181, 181, 181);
   border-radius: 5px;
-  background-color: rgb(88, 0, 0);
-  width: 96vw;
+  background-color: rgb(75, 0, 0);
+  width: 100vw;
   text-align: center;
   font-weight: 500;
+  border: solid 3px var(--border);
+  padding: 10px;
+  font-size: 55px;
 }
 
 .searchbar {
@@ -34,10 +39,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: rgb(57, 57, 74);
+  background-color: var(--background);
   border-radius: 10px;
   margin: 20px;
   margin-top: 80px;
+  border: solid 3px var(--border);
+  /* height: 20vh; */
 }
 .Infopanel {
   font-size: 25px;
@@ -45,11 +52,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(57, 57, 74);
+  background-color: var(--background);
   margin: 20px;
   border-radius: 10px;
-  height: 20vh;
+  height: 30vh;
   margin-top: 200px;
+  border: solid 3px var(--border);
+  font-size: 55px;
 }
 #placeholder {
   margin: 10px;
@@ -59,26 +68,27 @@ h2 {
 }
 
 #Search {
-  margin: 4px;
   width: 21vw;
   margin: 20px;
 }
 
 #stats {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
   color: rgb(181, 181, 181);
   border-radius: 5px;
-
-  background-color: rgb(88, 0, 0);
+  border: solid 3px var(--border);
+  background-color: var(--background);
 }
 .card {
   color: white;
-  background-color: rgb(57, 57, 74);
+  background-color: var(--background);
+
   border-radius: 10px;
 }
 
@@ -90,11 +100,12 @@ p {
   margin: 10px;
 }
 body {
-  background-color: rgb(0, 31, 78);
+  background-color: rgb(9, 1, 71);
 }
 .CovidStats {
   font-size: 20px;
   display: flex;
   justify-content: center;
   height: 100px;
+  border: solid 3px var(--border);
 }
