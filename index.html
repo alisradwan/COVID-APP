@@ -108,11 +108,10 @@
 
       <div class="col-sm-8 container">
         <div class="row">
-          <img
-            class="col-sm container"
-            src="./assets/imgs/istockphoto-1214889162-612x612.jpeg"
-            alt=""
-          />
+          
+          <div id="map"></div>
+          <button onclick="addMarkerToSanJose()">Add Marker</button>
+      
         </div>
 
         <div id="three-stats">
@@ -137,5 +136,12 @@
         </div>
       </div>
     </div>
+
+    <script src= "./assets/script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+      ></script>
+
   </body>
 </html>

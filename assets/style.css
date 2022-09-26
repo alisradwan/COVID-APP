@@ -109,3 +109,8 @@ body {
   height: 100px;
   border: solid 3px var(--border);
 }
+
+#map {
+  height: 800px;
+  width: 1500px;
+}
