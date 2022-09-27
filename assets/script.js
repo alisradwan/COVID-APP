@@ -6,12 +6,14 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: sanfranciscoLatLong,
     zoom: 8,
+    mapId: "354e515ae59101d6",
   });
 }
 
 function addMarkerToSanJose() {
     const marker = new google.maps.Marker({
         position: sanjoseLatLong, 
+        label: "San Jose",
         map: map,
     });
 }
