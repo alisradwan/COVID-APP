@@ -27,9 +27,10 @@
         <div class="searchbar">
           <br />
           <h1>Select State Name:</h1>
-          <!-- <input type="text" placeholder=" City Name" id="placeholder" /> -->
+          <form id="searchform" class="searchform">
+        <input type="text" placeholder="State Name" id="entry" />
           <!--- United States states -->
-          <select id="placeholder" name="country-state">
+         <!--- <select id="placeholder" name="country-state">
             ,
             <option value="SL">Select State</option>
             <option value="AL">Alabama</option>
@@ -99,9 +100,10 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
-
-          <br />
-          <button type="btn" class="btn btn-primary" id="Search">Search</button>
+        -->
+          <!-- <br /> -->
+          <button type="submit" class="btn btn-primary" id="Search">Search</button>
+          </form>
         </div>
         <div class="Infopanel">Info panel</div>
       </div>
@@ -119,17 +121,17 @@
           <div class="row">
             <div class="col-sm">
               <div class="card container CovidStats">
-                <div class="card-title" id="date">Date:</div>
+                <div class="card-title" id="confirmed">Confirmed:</div>
               </div>
             </div>
             <div class="col-sm">
               <div class="card container CovidStats">
-                <p id="recovered">recovered:</p>
+                <p id="recovered">Recovered:</p>
               </div>
             </div>
             <div class="col-sm">
               <div class="card container CovidStats">
-                <p id="deaths">deaths:</p>
+                <p id="deaths">Deaths:</p>
               </div>
             </div>
           </div>
@@ -138,6 +140,7 @@
     </div>
 
     <script src= "./assets/script.js"></script>
+    <script src="./assets/extra.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
