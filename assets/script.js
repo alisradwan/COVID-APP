@@ -34,4 +34,41 @@ async function getReportsByProvince(province) {
   return data;
 }
 
+async function renderMarkers () {
+  const locations = await getCovidLocations();
+  const infoWindow = new google.maps.InfoWindow();
+  
+  locations.forEach(function (location) {
+    const region = location.province.split(' ');
+    const isCounty = region[region.length - 1].length === 2;
+    const isStateRegion = region.length <= 2 && !isCounty;
 
+    if (isStateRegion && !region.includes('Princess')) {
+      const marker = new google.maps.Marker({
+        position: {
+          lat: parseInt(location.lat, 10),
+          lng: parseInt(location.long, 10)
+        },
+        title: location.province,
+        label: location.province,
+        map: map,
+        optimized: false
+      });
+  
+      marker.addListener('click', async function () {
+        infoWindow.close();
+        const data = await getReportsByProvince(location.province);
+        const report = data[0];
+
+        infoWindow.setContent(`${marker.getTitle()+":"}
+          Active cases: ${report.active},
+          Deaths:  ${report.deaths}`
+        );
+
+        infoWindow.open(marker.getMap(), marker);
+      })
+    }
+  })
+}
+
+renderMarkers();
