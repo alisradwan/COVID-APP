@@ -46,11 +46,10 @@ async function renderMarkers () {
     if (isStateRegion && !region.includes('Princess')) {
       const marker = new google.maps.Marker({
         position: {
-          lat: parseInt(location.lat, 10),
-          lng: parseInt(location.long, 10)
+          lat: Number(location.lat),
+          lng: Number(location.long)
         },
         title: location.province,
-        label: location.province,
         map: map,
         optimized: false
       });
