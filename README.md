@@ -40,4 +40,4 @@ github: https://alisradwan.github.io/COVID-APP/
 
 # Screenshot 
 
-![](image.png)
+![](./assets/imgs/image.png)
