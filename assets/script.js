@@ -5,7 +5,7 @@ let btn = document.querySelector('.btn');
 let zLvl = 4;
 let searchform = document.getElementById('searchform')
 const confCases = document.getElementById('confirmed');
-const recoCases = document.getElementById('recovered');
+const fataCases = document.getElementById('fatal');
 const deathCases = document.getElementById('deaths');
 
 
@@ -44,7 +44,7 @@ function filterResults(covidData, state) {
 function displayCovidData(covidData) {
     console.log('data wanted', covidData)
 	let cStat = covidData.active;
-	let rStat = covidData.recovered;
+	let fStat = covidData.fatality_rate;
 	let dStat = covidData.deaths;
     let covidLat = parseInt(covidData.region.lat);
     let covidLon = parseInt(covidData.region.long);
@@ -53,7 +53,7 @@ function displayCovidData(covidData) {
     initMap();
     
 	confCases.innerHTML = ('Confirmed:' + cStat);
-	recoCases.innerHTML = ('Recovered:' + rStat);
+	fataCases.innerHTML = ('Fatality Rate:' + fStat);
 	deathCases.innerHTML = ('Deaths:' + dStat);
 }
 
