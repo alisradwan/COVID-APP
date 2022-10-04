@@ -33,6 +33,11 @@ Google Maps: https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjM
 Covid Data:
 COVID-19 Statistics API Documentation (axisbits-axisbits-default) | RapidAPI
 
-Github:
+Github: https://github.com/alisradwan/COVID-APP
+
+github: https://alisradwan.github.io/COVID-APP/
 
 # Screenshot 
+
+<img src= "image.png">
+
