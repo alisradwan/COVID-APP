@@ -9,7 +9,7 @@ We created a website for COVID-19 data and statistics, so that when you use our 
 I want a website where I can look up covid-19 statistics at a specific area.
 
 
-# Acceptance Critera:
+# Acceptaence Critera:
 
 Given when I want a live application showing covid stats
 When I open the application
@@ -22,6 +22,7 @@ There is a section of covid stats
 
 
 # Technologies:
+
 -Javascript
 -HTML
 -CSS
@@ -33,6 +34,10 @@ Google Maps: https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjM
 Covid Data:
 COVID-19 Statistics API Documentation (axisbits-axisbits-default) | RapidAPI
 
-Github:
+Github: https://github.com/alisradwan/COVID-APP
+
+github: https://alisradwan.github.io/COVID-APP/
 
 # Screenshot 
+
+![](./assets/imgs/image.png)
