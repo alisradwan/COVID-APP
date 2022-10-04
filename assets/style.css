@@ -136,3 +136,18 @@ body {
   height: 800px;
   width: 1730px;
 }
+
+.wallpaper {
+  background: linear-gradient(
+   rgba(31, 27, 27, 0.5),
+   rgba(255,255,255,0.5)
+  ), url("./imgs/C-19.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 40vh;
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   opacity: 16;
+   filter: blur(0px);
+ }
